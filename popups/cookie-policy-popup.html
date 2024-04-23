@@ -1,0 +1,71 @@
+<style>
+    .cookie-policy{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 5;
+        color: #fff;
+    }
+    .cookie-policy .default-btn{
+        cursor: pointer;
+    }
+    .cookie-policy .optional-btn{
+        cursor: pointer;
+    }
+    .cookie-policy .optional-btn::before{
+        border-color: #fff;
+    }
+    @media only screen and (max-width: 767px) {
+        .cookie-policy{
+            font-size: .8em;
+        }
+        .cookie_text{
+            margin-bottom: 10px;
+        }
+    }
+    .cookie-policy-show{
+        display: block;
+    }
+    .cookie-policy-hide{
+        display: none;
+    }
+</style>
+<div class="cookie-policy" id="cookie-policy" name="cookie-policy">
+    <div class="container">
+       <div class="row py-2">
+           <div class="col-md-8 text-center text-md-left cookie_text">
+            We use cookies to offer you a better experience, analyze site traffic, and serve targeted advertisements. Please accept cookies for optimal performance
+           </div>
+        <div class="col-md-4 text-center text-md-right">
+            <a class="default-btn mt-0"  style="padding-left: 25px;" id="accept-cookie">
+                accept
+                <span></span>
+            </a>
+            <a class="optional-btn" style="padding-left: 25px;color: white; border-color: #fff;" href="/cookie-policy">                                
+                change settings
+                <span style="top: 49.4219px; left: 164px;"></span>
+            </a>
+        </div>
+       </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        if(checkAcceptCookie()){
+            $('#cookie-policy').hide();
+        }else if(window.location.pathname.indexOf("cookie-policy") > -1){
+            $('#cookie-policy').hide();
+        }
+        else{
+            $('#cookie-policy').show();
+        }        
+    });
+    $('#accept-cookie').click(function() {
+        setAcceptCookie();
+        $('#cookie-policy').hide();
+    });
+</script>

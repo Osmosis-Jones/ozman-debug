@@ -1,0 +1,229 @@
+<!-- Modal -->
+<div class="modal fade" id="demoNowModalCenter" tabindex="-1" role="dialog" aria-labelledby="demoNowModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="demoNowModalLongTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="contactForm" class="registration-form">
+                    <div class="row" id="row1">
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <img src="/assets/img/popups/demo-now.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-7 col-md-12">
+                            <h3>See for yourself!</h3>
+                            <p>Want to know why hundreds of educational institutions around the world trust Ed-admin?
+                                Start
+                                your live demo right now!</p>
+                            <div class="form-group">
+                                <input type="text" class="form-control no-border validate" id="name" placeholder="Name *"
+                                    required data-error="Please enter your name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control no-border validate" id="email"
+                                    placeholder="Corporate Email *" required required
+                                    data-error="Please enter your email">
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select validate" required data-error="Please select an item">
+                                    <option value="" selected>Please select an item *</option>
+                                    <option value="Nursery">Nursery</option>
+                                    <option value="K-12 School">K-12 School</option>
+                                    <option value="College">College</option>
+                                    <option value="University">University</option>
+                                    <option value="Governmental Body">Governmental Body</option>
+                                    <option value="Art or Language School">Art or Language School</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>                            
+                            <button type="button" id="click" class="btn btn-primary btn-lg btn-block create-account-button"
+                                disabled>Next</button>
+                            <div class="text-center">Don't have the time right now? <a href="#" data-dismiss="modal"
+                                    style="text-decoration: underline;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ed-admin-free-demo/60min'});return false;">Schedule a free demo
+                                    later</a> </div>
+                        </div>
+                    </div>
+                    <div class="row" id="row2">
+                        <div class="col-12 pl-5">
+                            <h3 class="ml-5 mb-2">Before We Begin</h3>
+                        </div>
+                        <div class="col-lg-1  d-none d-lg-block">
+                            <div class="row text-center">
+                                <div class="col-12">
+                                    <img alt=" " src="/assets/img/popups/chronometer.png">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <img alt=" " src="/assets/img/popups/Circles-group.png">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <img alt=" " src="/assets/img/popups/group.png">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <img alt=" " src="/assets/img/popups/Circles-group.png">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <img alt=" " src="/assets/img/popups/online-learning.png">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <img alt=" " src="/assets/img/popups/Circles-group.png">                                                                      
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <img alt=" " src="/assets/img/popups/Circles-group.png">                                                                      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-11 col-md-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="mt-2">Time: 30 minutes</h5>
+                                </div>
+                                <div class="col-12 mt-5">
+                                    <h5>Add Guests</h5>
+                                    <p>The link will be sent to your guests as soon as you click “Start the Demo Now”
+                                    </p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control no-border font-size-15"
+                                            placeholder="Enter Email *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control no-border font-size-15"
+                                            placeholder="Enter Email *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control no-border font-size-15"
+                                            placeholder="Enter Email *" required>
+                                    </div>
+                                    <div class="text-right">Invite up to 3 additional guests to this demo</div>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5>Let us know more about you</h5>
+                                            <p>What are you hoping to achieve with learning management software?</p>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="chk1">
+                                                <label class="form-check-label" for="chk1">
+                                                    Waste less time with administration
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="chk2">
+                                                <label class="form-check-label" for="chk2">
+                                                    Enrich your students’ academic experiences
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="chk3">
+                                                <label class="form-check-label" for="chk3">
+                                                    Empower educators with the most advanced tools
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="chk4">
+                                                <label class="form-check-label" for="chk4">
+                                                    Save money and simplify your finances
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="chk5">
+                                                <label class="form-check-label" for="chk5">
+                                                    Improve communication
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="chk6">
+                                                <label class="form-check-label" for="chk6">
+                                                    Boost your brand
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="chk7">
+                                                <label class="form-check-label" for="chk7">
+                                                    Increase applicants
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="chk8">
+                                                <label class="form-check-label" for="chk8">
+                                                    Other
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control no-border"
+                                                    placeholder="Please Specify">
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="chkAcceptRules">
+                                                <label class="form-check-label" for="chkAcceptRules">
+                                                    I allow this website to handle and store my data
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <button type="button" id="backDemo"
+                                                class="btn btn-secondary  btn-lg btn-block">Back</button>
+                                        </div>
+                                        <div class="col-9">
+                                            <button type="button" id="startDemo"
+                                                class="btn btn-primary btn-lg btn-block" disabled>Start the Demo
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#row1").show();
+        $("#row2").hide();
+    });
+    $('#click').click(function () {
+        $("#row1").hide();
+        $("#row2").show();
+    });
+    $("#backDemo").click(function () {
+        $("#row1").show();
+        $("#row2").hide();
+    });
+    $("#chkAcceptRules").change(function () {
+        $("#startDemo").attr("disabled", !this.checked);
+    });
+    $(function() {
+    // Cache fields that you want to validate
+    var $fieldsToCheck = $('.registration-form .validate');
+    
+    // Function to ensure fields are not empty
+    var checkFields = function() {
+      // Get array of empty fields
+      var emptyFields = $fieldsToCheck.map(function() {
+        return this.value;
+      }).get().filter(function(val) {
+        return val.length === 0;
+      });
+      
+      // Disabled prop to be toggled based on length of empty fields
+      $('.create-account-button').prop('disabled', !!emptyFields.length);
+    };
+  
+    // Bind onInput event to all inputs you want to check
+    $fieldsToCheck.on('input', checkFields);
+  
+  });
+</script>

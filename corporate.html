@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ed-admin Corporate is a business management tool, a powerful and affordable way to run your company.">
+    <meta name="keywords" content="Ed-admin Corporate">
+
+    <link rel="stylesheet" href="../assets/css/jquery-ui.css">
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <!-- BoxIcons Min CSS -->
+    <link rel="stylesheet" href="../assets/css/boxicons.min.css">
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <!-- Odometer Min CSS -->
+    <link rel="stylesheet" href="../assets/css/odometer.min.css">
+    <!-- MeanMenu CSS -->
+    <link rel="stylesheet" href="../assets/css/meanmenu.css">
+    <!-- Magnific Popup Min CSS -->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <style>
+        
+        .iframe{
+            width: 450px;height: 350px
+        }
+        @media only screen and (max-width: 767px) {
+            h1{
+                font-size: 30px;
+            }
+            h2{
+                font-size: 25px;
+            }
+            h3{
+                font-size: 22px;
+            }
+            h4{
+                font-size: 20px;
+            }
+            .corporate-per-section{
+                padding: 100px 20px 50px 20px;
+            }
+        }
+    </style>
+
+    <title>Ed-admin Corporate: The Most Affordable ERP</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon-Edadmin.ico">
+    <script src="/assets/js/cookie.js" type="text/javascript"></script>
+    <script type="application/javascript">
+        if (getAcceptCookie()) {
+            (function(b, o, n, g, s, r, c) {
+                if (b[s]) return;
+                b[s] = {};
+                b[s].scriptToken = "XzEyNjEwODY3MTU";
+                b[s].callsQueue = [];
+                b[s].api = function() {
+                    b[s].callsQueue.push(arguments);
+                };
+                r = o.createElement(n);
+                c = o.getElementsByTagName(n)[0];
+                r.async = 1;
+                r.src = g;
+                r.id = s + n;
+                c.parentNode.insertBefore(r, c);
+            })(window, document, "script", "https://cdn.oribi.io/XzEyNjEwODY3MTU/oribi.js", "ORIBI");
+        }
+    </script>
+    <!-- Hotjar Tracking Code for www.Ed-admin.com -->
+    <script>
+        if (getAcceptCookie()) {
+            (function(h, o, t, j, a, r) {
+                h.hj = h.hj || function() {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+                h._hjSettings = {
+                    hjid: 2174932,
+                    hjsv: 6
+                };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script');
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7QM9WG2P4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-B7QM9WG2P4');
+    </script>
+
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+
+    <script>
+        $(function() {
+            $("#corporate-slider").slider({
+                range: "min",
+                value: 100,
+                min: 0,
+                max: 800,
+                step: 100,
+                slide: function(event, ui) {
+                    if (ui.value < 100 || ui.value > 600) {
+                        return false;
+                    }
+
+                    if (ui.value >= 100 && ui.value < 200) {
+                        $("#price-amount").html('$1782');
+                        $("#price-amount-year").html('/yearly');
+                    } else if (ui.value >= 200 && ui.value < 300) {
+                        $("#price-amount").html('$2376');
+                        $("#price-amount-year").html('/yearly');
+                    } else if (ui.value >= 300 && ui.value < 400) {
+                        $("#price-amount").html('$3465');
+                        $("#price-amount-year").html('/yearly');
+                    } else if (ui.value >= 400 && ui.value < 500) {
+                        $("#price-amount").html('$5940');
+                        $("#price-amount-year").html('/yearly');
+                    } else if (ui.value >= 500 && ui.value < 600) {
+                        $("#price-amount").html('$9900');
+                        $("#price-amount-year").html('/yearly');
+                    } else if (ui.value >= 600 && ui.value < 700) {
+                        $("#price-amount").html('Contact Sales');
+                        $("#price-amount-year").html('');
+                    }
+
+                    $(".corporate-per-button").each(function() {
+                        var vl = $(this).attr('varl');
+                        var pl = vl * 800 / 100;
+                        if (pl > ui.value) {
+                            $(this).addClass('graybut');
+                        } else {
+                            $(this).removeClass('graybut');
+                        }
+
+                    });
+                    $(".corporate-per-count").each(function() {
+                        var vl = $(this).attr('varl');
+                        var pl = vl * 800 / 100;
+                        if (pl > ui.value || pl < ui.value) {
+                            $(this).addClass('graybut');
+                        } else {
+                            $(this).removeClass('graybut');
+                        }
+
+                    });
+                },
+                change: function(event, ui) {
+                    if (ui.value >= 100 && ui.value < 200) {
+                        $("#price-amount").html('$1782');
+                        $("#price-amount-year").html('/yearly');
+                    } else if (ui.value >= 200 && ui.value < 300) {
+                        $("#price-amount").html('$2376');
+                        $("#price-amount-year").html('/yearly');
+                    } else if (ui.value >= 300 && ui.value < 400) {
+                        $("#price-amount").html('$3465');
+                        $("#price-amount-year").html('/yearly');
+                    } else if (ui.value >= 400 && ui.value < 500) {
+                        $("#price-amount").html('$5940');
+                        $("#price-amount-year").html('/yearly');
+                    } else if (ui.value >= 500 && ui.value < 600) {
+                        $("#price-amount").html('$9900');
+                        $("#price-amount-year").html('/yearly');
+                    } else if (ui.value >= 600 && ui.value < 700) {
+                        $("#price-amount").html('Contact Sales');
+                        $("#price-amount-year").html('');
+                    }
+                    $(".corporate-per-button").each(function() {
+                        var vl = $(this).attr('varl');
+                        var pl = vl * 800 / 100;
+                        if (pl > ui.value) {
+                            $(this).addClass('graybut');
+                        } else {
+                            $(this).removeClass('graybut');
+                        }
+                    });
+                    $(".corporate-per-count").each(function() {
+                        var vl = $(this).attr('varl');
+                        var pl = vl * 800 / 100;
+                        if (pl > ui.value || pl < ui.value) {
+                            $(this).addClass('graybut');
+                        } else {
+                            $(this).removeClass('graybut');
+                        }
+                    });
+                }
+            });
+            $(".corporate-per-button").click(function(e) {
+                var vl = $(this).attr('varl');
+                var pl = vl * 800 / 100;
+                $("#corporate-slider").slider("value", pl);
+            });
+
+            $(".corporate-per-button").each(function() {
+                var vl = $(this).attr('varl');
+                var pl = 8 - Math.round((vl / 12.5 * 4));
+                $(this).css('left', 'calc( ' + vl + '% + ' + pl + 'px )');
+                $(this).addClass('graybut');
+            });
+
+            $(".corporate-per-count").each(function() {
+                var vl = $(this).attr('varl');
+                var pl = 8 - Math.round((vl / 12.5 * 4));
+                $(this).css('left', 'calc( ' + vl + '% + ' + pl + 'px )');
+                var vl = $(this).attr('varl');
+                pl = vl * 800 / 100;
+                if (pl > $("#corporate-slider").slider("value") || pl < $("#corporate-slider").slider("value")) {
+                    $(this).addClass('graybut');
+                } else {
+                    $(this).removeClass('graybut');
+                }
+            });
+
+            //$("#amount").val("$" + $("#slider").slider("value"));
+        });
+    </script>
+</head>
+
+<body>
+    <span data-menuid="products Ed-admin-corporate" class="d-none"></span>
+    <!-- Start PopUps Area -->
+    <div data-include="../popups/demonow"></div>
+    <div data-include="../popups/bookdemo"></div>
+    <div data-include="../popups/downloadnow"></div>
+    <div data-include="../popups/freedemo"></div>
+    <!-- End PopUps Area -->
+
+    <!-- Start Preloader Area -->
+    <!-- <div class="preloader-area">
+            <div class="spinner">
+                <div class="inner">
+                    <div class="disc"></div>
+                    <div class="disc"></div>
+                    <div class="disc"></div>
+                </div>
+            </div>
+        </div> -->
+    <!-- End Preloader Area -->
+
+    <!-- Start Header Area -->
+    <div data-include="../common/header2"></div>
+    <!-- End Header Area -->
+
+    <!-- Start About Area -->
+    <section class="about-area pt-70 background-image">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-content">
+                        <h1 class="mb-3">Ed-admin Corporate</h1>
+                        <h4>Grow your business with an all-in-one solution</h4>
+                        <h6 class="mt-3" style="font-size: 14px;">Ed-admin Corporate is a business management tool, a powerful and affordable way to run your company. Ed-admin Corporate takes care of the little things so that you can focus on driving growth.</h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-image">
+                        <!-- <img src="/assets/img/corporate-header.gif" alt="Grow your business with an all-in-one solution"> -->
+                        <iframe src="/assets/img/corporate/htm5-gif/gif1/index.html" frameborder="0" class="iframe"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Area -->
+
+    <!-- Start Features Card -->
+    <section class="features-card-section pt-100 pb-70 bg-f8fbfa">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="single-features-card tx-center">
+                        <i class='bx'>
+                            <img alt=" " src="/assets/img/corporate/software-affordably.png" >
+                        </i>
+                        <h3>
+                            Run and maintain your ERP software affordably
+                        </h3>
+                        <p>Reduce the cost of managing your business, from financials to sales, project management to HR.</p>
+                        <br style="font-size: 19px;" />
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="single-features-card tx-center">
+                        <i class='bx'>
+                            <img alt=" " src="/assets/img/corporate/department.png" >
+                        </i>
+                        <h3>
+                            Handle all your department needs with one solution
+                        </h3>
+                        <p>Take control over every aspect of your business. Gain insight into workflow and processes by capturing critical data and sharing it with key stakeholders.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="single-features-card tx-center">
+                        <i class='bx'>
+                            <img alt=" " src="/assets/img/corporate/business-growth.png" >
+                        </i>
+                        <h3>
+                            Power your business growth with keen insight
+                        </h3>
+                        <p>A simple but powerful interface provides you with a single view of your business in an instant. You can even customise the application to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Features Card -->
+
+    <!-- Start End JQueryUI Slider area  -->
+    <section class=" pb-70 bg-f8fbfa">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pb-3">
+                    <h2 class="text-center">
+                        All you need with the most affordable price
+                    </h2>
+                </div>
+                <div class="col-12 pb-3">
+                    <h5 class="text-center">
+                        How many employees does your organization have?
+                    </h5>
+                </div>
+            </div>
+            <div class="row corporate-per-section">
+                <div class="col-12 ">
+                    <div>
+                        <span class="corporate-per-count" varl="12.5">20</span>
+                        <span class="corporate-per-count" varl="25">30</span>
+                        <span class="corporate-per-count" varl="37.5">50</span>
+                        <span class="corporate-per-count" varl="50">100</span>
+                        <span class="corporate-per-count" varl="62.5">200</span>
+                        <span class="corporate-per-count" varl="75" style="white-space: nowrap;"><span style="font-size: smaller;">More than</span> 200</span>
+                    </div>
+                    <div>
+                        <span class="corporate-per-button" varl="12.5"></span>
+                        <span class="corporate-per-button" varl="25"></span>
+                        <span class="corporate-per-button" varl="37.5"></span>
+                        <span class="corporate-per-button" varl="50"></span>
+                        <span class="corporate-per-button" varl="62.5"></span>
+                        <span class="corporate-per-button" varl="75"></span>
+                    </div>
+                    <div id="corporate-slider"></div>
+                </div>
+                <div class="col-12 pt-5">
+                    <h2 class="text-center">
+                        <span id="price-amount" style="color: #006eb3;font-size: larger;">$1782</span>
+                        <span id="price-amount-year" style="color:#aaaaaa;font-size: smaller;">/yearly</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="services-content text-center" style="max-width: unset;">
+                        <div class="content pt-4" style="max-width: unset;">
+                            <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ed-admin-free-demo/60min'});return false;" class="default-btn" style="padding-left: 25px;">                                
+                                Free Demo
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End JQueryUI Slider area -->
+
+    <!-- Start A Solution for Every Need Area -->
+    <section class="pricing-area pt-5 pb-2 bg-f4f5fe">
+        <div class="container">
+            <div class="section-title" style="text-transform: none;">
+                <h2 class="pb-3">A Solution for Every Need</h2>
+                <p>Covering all aspects of business administration, from financial and inventory to sales and staff management</p>
+            </div>
+        </div>
+    </section>
+    <!-- End A Solution for Every Need Area -->
+
+    <!-- Start Financial Management Area -->
+    <section class="services-area bg-right-shape ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="services-content it-service-content">
+                    <div class="content left-content">
+                        <h2>Financial Management</h2>
+                        <p>Connecting financial operations with other business processes is easier than ever with the General Ledger module. Manage banking and automate accounting tasks in a few clicks, speeding up transactions and improving cash flow.</p>
+                    </div>
+                </div>
+
+                <div class="services-image wow fadeInRight" data-wow-delay=".3s">
+                    <div class="image">
+                        <!-- <img src="../assets/img/corporate/EdWebsite-CorporateFinancial.gif" alt="image"> -->
+                        <iframe src="/assets/img/corporate/htm5-gif/financial-management" frameborder="0" class="iframe"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Financial Management Area -->
+
+    <!-- Start Pricing Area -->
+    <section class="pricing-area pt-100 pb-70 bg-f4f5fe">
+        <div class="container">
+            <div class="tab pricing-list-tab">
+                <ul class="tabs">
+                    <li class="animate__animated animate__bounce animate__delay-2s">
+                        <a href="#" class="animate__animated animate__bounce animate__delay-2s" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            General Ledger
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i> -->
+                            Budget Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Supplier Payment
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="tab_content">
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Take control of your budget with a fully customisable budget management system. Set your own periods, assign Budget Holders, and delegate approval functions to responsible administrators.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/general-ledger-and-budgeting.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Save time with the active Budget Dashboard function. Staff can view their own budget codes as either chart view or transaction history, easing the burden on the accounts department.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/budget-dashboard.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Manage all your supplier details and payments in one place.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/supplier-payments.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Pricing Area -->
+
+    <!-- Start Staff Management Area -->
+    <section class="services-area bg-right-shape ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="services-content it-service-content">
+                    <div class="content left-content">
+                        <h2>Staff Management</h2>
+                        <p>No more stacks of paper: digitise your staff management documentation and store it all in one easy-to-access location. Keep track of your staff attendance, leave applications, annual leave accrual, and records, including information
+                            on their qualifications, job history, and previous experience.</p>
+                    </div>
+                </div>
+
+                <div class="services-image wow fadeInRight" data-wow-delay=".3s">
+                    <div class="image">
+                        <!-- <img src="../assets/img/corporate/EdWebsite-CorporateFinancial.gif" alt="image"> -->
+                        <iframe src="/assets/img/corporate/htm5-gif/staff-management" frameborder="0" class="iframe"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Staff Management Area -->
+
+    <!-- Start Pricing Area -->
+    <section class="pricing-area pt-100 pb-70 bg-f4f5fe">
+        <div class="container">
+            <div class="tab pricing-list-tab">
+                <ul class="tabs">
+                    <li class="animate__animated animate__bounce animate__delay-2s">
+                        <a href="#" class="animate__animated animate__bounce animate__delay-2s" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Payroll
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i> -->
+                            Human Resources Database
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Staff Attendance Register
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Staff Leave Management
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="tab_content">
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Take the stress out of payroll. Define payroll cycles and create salary and salary-grade groups instantly from contract information.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/payroll.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Keep track of your staff records, including emergency contacts and security access credentials. You could even access information on their qualifications, job history, and experience.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/human-resources.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Easily track staff attendance, with optional biometric security integration.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/staff-attendance.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>No more stacks of paper: digitise your staff management documentation and store it all in one easy-to-access location</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/staff-leave-management.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Pricing Area -->
+
+    <!-- Start Purchasing and Inventory Control Area -->
+    <section class="services-area bg-right-shape ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="services-content it-service-content">
+                    <div class="content left-content">
+                        <h2>Purchasing and Inventory Control</h2>
+                        <p>Keep track of inbound and outbound shipments, inventory levels, quantity control, and item locations, all in one place.</p>
+                    </div>
+                </div>
+
+                <div class="services-image wow fadeInRight" data-wow-delay=".3s">
+                    <div class="image">
+                        <!-- <img src="../assets/img/corporate/EdWebsite-CorporateFinancial.gif" alt="image"> -->
+                        <iframe src="/assets/img/corporate/htm5-gif/purchasing-and-inventory-control" frameborder="0" class="iframe"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Purchasing and Inventory Control Area -->
+
+    <!-- Start Pricing Area -->
+    <section class="pricing-area pt-100 pb-70 bg-f4f5fe">
+        <div class="container">
+            <div class="tab pricing-list-tab">
+                <ul class="tabs">
+                    <li class="animate__animated animate__bounce animate__delay-2s">
+                        <a href="#" class="animate__animated animate__bounce animate__delay-2s" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Inventory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i> -->
+                            Requisition and Purchasing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Product Search
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Shipping
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="tab_content">
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Know where your inventory is at all times. Use the Inventory module to follow individual items on every step of the journey from purchase to sale.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/Inventory.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Enable staff to manage purchase orders, raise stock, and purchase requisitions.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/purchasing-and-requisitions.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Search your inventory for products and gain a deeper insight into your inventory. Displays product details including quantity, size, weight, order date, and delivery date.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/product-search.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Shipping made it easy. Keep a record of product shipping costs and custom duty invoices, as well as freight, bank charges, logistics, and landing, in one place.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/shipping.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Pricing Area -->
+
+    <!-- Start Sales and Customer Management Area -->
+    <section class="services-area bg-right-shape ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="services-content it-service-content">
+                    <div class="content left-content">
+                        <h2>Sales and Customer Management</h2>
+                        <p>No more lost sales due to miscommunication. Manage your entire sales process and customer lifecycle efficiently and in one place. Empower your sales team with an integrated view of your current customers and future prospects, featuring
+                            inquiry tracking and marketing funnels.</p>
+                    </div>
+                </div>
+
+                <div class="services-image wow fadeInRight" data-wow-delay=".3s">
+                    <div class="image">
+                        <!-- <img src="../assets/img/corporate/EdWebsite-CorporateFinancial.gif" alt="image"> -->
+                        <iframe src="/assets/img/corporate/htm5-gif/sales-and-customer-management" frameborder="0" class="iframe"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Sales and Customer Management Area -->
+
+    <!-- Start Pricing Area -->
+    <section class="pricing-area pt-100 pb-70 bg-f4f5fe">
+        <div class="container">
+            <div class="tab pricing-list-tab">
+                <ul class="tabs">
+                    <li class="animate__animated animate__bounce animate__delay-2s">
+                        <a href="#" class="animate__animated animate__bounce animate__delay-2s" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Customer Transaction
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i> -->
+                            Customer Payment
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Communication
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="tab_content">
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Enable your team to close sales quickly and efficiently. Manage Invoices, Orders, Credits, and Quotes for your customers with a simple interface, fully compatible with Proforma Invoices.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/customers-transactions.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Keep track of customer payments and invoices so that you never miss a payday again.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/customer-payments.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Coordinate your teams, engage with your clients, and cut response times with a powerful communication module. Features include bulk mail, email, and SMS.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/comiunication.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Pricing Area -->
+
+    <!-- Start Mobility Area -->
+    <section class="services-area bg-right-shape ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="services-content it-service-content">
+                    <div class="content left-content">
+                        <h2>Mobility</h2>
+                        <p>With intuitive mobile apps, your teams can view real-time reports, check operational activities, receive alerts, and complete approvals from their iOS or Android mobile devices.</p>
+                    </div>
+                </div>
+
+                <div class="services-image wow fadeInRight" data-wow-delay=".3s">
+                    <div class="image">
+                        <!-- <img src="../assets/img/corporate/EdWebsite-CorporateFinancial.gif" alt="image"> -->
+                        <iframe src="/assets/img/corporate/htm5-gif/mobility" frameborder="0" class="iframe"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Mobility Area -->
+
+    <!-- Start Pricing Area -->
+    <section class="pricing-area pt-100 pb-70 bg-f4f5fe">
+        <div class="container">
+            <div class="tab pricing-list-tab">
+                <ul class="tabs">
+                    <li class="animate__animated animate__bounce animate__delay-2s">
+                        <a href="#" class="animate__animated animate__bounce animate__delay-2s" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Push Notificationv
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i> -->
+                            Calendar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="padding: 10px 30px;">
+                            <!-- <i class="bx bxs-calendar-check"></i>  -->
+                            Health Screening
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="tab_content">
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Say goodbye to ineffective communication by broadcasting reminders, office news, memos, and emergency updates using Push Notifications to mobile devices.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/notification.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Enable staff to view all scheduled plans, meetings, and working hours right from their mobile devices.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/calendar.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_item">
+                        <div class="row">
+                            <div class="offset-1 col-9">
+                                <div class="content left-content">
+                                    <!---<h2>Financial Management</h2>--->
+                                    <p>Keep your staff and workplace safe and healthy by recording and tracking signs and symptoms of coronavirus.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-2 wow fadeInRight">
+                                <div class="image">
+                                    <img src="/assets/img/corporate/health.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Pricing Area -->
+
+    <!-- Start Video Presentation Area -->
+    <section class="video-presentation-area pt-70" style="padding-bottom: 120px;">
+        <div class="container">
+            <div class="text-center mb-5 pb-5">
+                <h1>Trusted by Hundreds of Organizations Around the World</h1>
+                <p class="text-adjust">Ed-admin Corporate takes care of the little things so that you can focus on driving growth.</p>
+            </div>
+
+            <div class="video-box">
+                <img src="assets/img/corporate/mockup.png" class="main-image" alt="image">
+
+                <div class="shape1"><img src="assets/img/shape/1.png" alt="image"></div>
+                <div class="shape2"><img src="assets/img/shape/2.png" alt="image"></div>
+                <div class="shape3"><img src="assets/img/shape/3.png" alt="image"></div>
+                <div class="shape4"><img src="assets/img/shape/4.png" alt="image"></div>
+                <div class="shape5"><img src="assets/img/shape/5.png" alt="image"></div>
+                <div class="shape6"><img src="assets/img/shape/6.png" alt="image"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Video Presentation Area -->
+
+    <!-- Start Free Trial Area -->
+    <section class="free-trial-area ptb-100 bg-f4f5fe">
+        <div class="container">
+            <div class="free-trial-content">
+                <h2>Like to see Ed-admin in action? Ask for a demo!</h2>
+                <a href="#" class="default-btn" style="padding-left: 25px;"  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ed-admin/free-demo'});return false;">
+                    <!-- <i class="bx bxs-hot"></i> -->
+                    Free Demo<span></span></a>
+            </div>
+        </div>
+
+        <div class="shape10"><img src="/assets/img/shape/10.png" alt="image"></div>
+        <div class="shape11"><img src="/assets/img/shape/7.png" alt="image"></div>
+        <div class="shape12"><img src="/assets/img/shape/11.png" alt="image"></div>
+        <div class="shape13"><img src="/assets/img/shape/12.png" alt="image"></div>
+    </section>
+    <!-- End Free Trial Area -->
+
+    <!-- Start Footer Area -->
+    <div data-include="../common/footer"></div>
+    <!-- End Footer Area -->
+
+    <div class="go-top"><i class='bx bx-chevron-up'></i></div>
+
+    <!-- jQuery Min JS -->
+    <!--<script src="../assets/js/jquery.min.js"></script>-->
+    <!-- Popper Min JS -->
+    <script src="../assets/js/popper.min.js"></script>
+    <!-- Bootstrap Min JS -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup Min JS -->
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Appear Min JS -->
+    <script src="../assets/js/jquery.appear.min.js"></script>
+    <!-- Odometer Min JS -->
+    <script src="../assets/js/odometer.min.js"></script>
+    <!-- Owl Carousel Min JS -->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!-- MeanMenu JS -->
+    <script src="../assets/js/jquery.meanmenu.js"></script>
+    <!-- WOW Min JS -->
+    <script src="../assets/js/wow.min.js"></script>
+    <!-- Message Conversation JS -->
+    <script src="../assets/js/conversation.js"></script>
+    <!-- AjaxChimp Min JS -->
+    <script src="../assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Form Validator Min JS -->
+    <script src="../assets/js/form-validator.min.js"></script>
+    <!-- Contact Form Min JS -->
+    <script src="../assets/js/contact-form-script.js"></script>
+    <!-- Particles Min JS -->
+    <script src="../assets/js/particles.min.js"></script>
+    <script src="../assets/js/coustom-particles.js"></script>
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+    <script src="//code.tidio.co/a1g21c5ermfmgwlttlsf4t3fzbilk3zl.js" async></script>
+</body>
+
+</html>
